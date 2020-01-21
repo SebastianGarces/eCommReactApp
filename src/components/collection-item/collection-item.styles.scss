@@ -4,6 +4,20 @@
 	flex-direction: column;
 	height: 350px;
 	align-items: center;
+	position: relative;
+
+	&:hover {
+		.image {
+			opacity: 0.8;
+			transition: opacity 250ms linear;
+		}
+
+		.custom-button {
+			opacity: 0.85;
+			display: flex;
+			transition: opacity 250ms linear;
+		}
+	}
 
 	.image {
 		width: 100%;
@@ -11,6 +25,16 @@
 		background-size: cover;
 		background-position: center;
 		margin-bottom: 5px;
+		transition: all 250ms linear;
+	}
+
+	.custom-button {
+		width: 90%;
+		opacity: 0.7;
+		position: absolute;
+		top: 255px;
+		display: none;
+		transition: opacity 250ms linear;
 	}
 
 	.collection-footer {
